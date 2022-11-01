@@ -1,20 +1,30 @@
 {
-  "name": "backend",
+  "name": "ra-diplom-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "React Diplom server project",
+  "main": "server.js",
   "scripts": {
     "prestart": "npm install",
     "start": "forever server.js",
-    "watch": "forever -w server.js"
+    "watch": "forever -w server.js",
+    "stop": "forever stop server.js"
   },
-  "author": "",
+  "author": "Anna Alexandrova",
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaAlexandrova1/ra-diploma-server.git"
+  },
+  "homepage": "https://github.com/AnnaAlexandrova1/ra-diploma-server#readme",
   "license": "ISC",
   "dependencies": {
     "forever": "^1.0.0",
     "koa": "^2.7.0",
     "koa-body": "^4.1.1",
     "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
     "koa2-cors": "^2.0.6"
   }
 }
